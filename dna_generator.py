@@ -22,14 +22,18 @@ def random_list_choice(list):
     dna_pairs.append(x)
 
 base_pairs = ['A', 'G', 'T', 'C']
-how_many_pairs = 300
+how_many_pairs = 5
 for i in range(how_many_pairs):
     random_list_choice(base_pairs)
 
-x = ''
+dna_cycles = 2
 dna = []
-for i in dna_pairs:
-    x = str(x + i)
-dna.append(x)
+for i in range(dna_cycles):
+    x = ''
+    for i in dna_pairs:
+        x = str(x + i)
+    dna.append(x)
 
-print(f'This DNA Strand has {how_many_pairs} pairs: {x}')
+
+print(dna)
+# print(f'This DNA Strand has {how_many_pairs} pairs: {x}')
