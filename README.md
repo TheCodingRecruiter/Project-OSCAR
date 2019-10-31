@@ -33,7 +33,7 @@ Here are some ways that individuals can help with our project.  These may change
 <li>Create or provide different datasets that are open to the public for cancer research studies</li>
 <li>Provide links to different studies, articles, and medical journals that go into oncology and talk about the latest breakthroughs</li>
 <li>Research and share your ideas, no matter how outrageous, on what you think a good path would be to help in our endevour to completely eliminate cancer</li>
-<li>Recruiter others to our cause that can help in different industries (Development, Data Science, Legal, etc) and raise awareness to the project</li>
+<li>Recruiter others to our cause that can help in different industries (Development, Data Science, Doctors, Researchers, Lawyers, etc) and raise awareness to the project</li>
 <li>Introduce us to different company executives who may partner with us to allow us to leverage their cutting edge Med Tech or AI Tech</li>
 </ul>
 </p>
