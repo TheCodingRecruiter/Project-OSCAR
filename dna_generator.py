@@ -3,37 +3,35 @@
 
 import random
 
-def complet_random():
-    a = random.randint(1,100)
-    # print(a)
-    for i in range(a):
-        b = random.randint(1,100)
-        # print(b)
-        for i in range(b):
-            c = random.randint(1,100)
-            # print(c)
-    return c
-
 dna_pairs = []
-def random_list_choice(list):
-    a = complet_random()
-    for i in range(a):
-        x = random.choice(list)
-    dna_pairs.append(x)
+def random_list_choice():
+    a = random.randint(1,500)    # random number
+    random_dna = []
+    base_pairs = ['A', 'G', 'T', 'C']
+    # repeat 5 time for each strand
+    for i in range (5):
+        # repeat x number of time and add to the array
+        for i in range(a):
+            x = random.choice(base_pairs)
+        random_dna.append(x)
+    return random_dna
 
-base_pairs = ['A', 'G', 'T', 'C']
-how_many_pairs = 5
-for i in range(how_many_pairs):
-    random_list_choice(base_pairs)
-
-dna_cycles = 2
-dna = []
-for i in range(dna_cycles):
-    x = ''
-    for i in dna_pairs:
-        x = str(x + i)
-    dna.append(x)
+def cycle_them(this):
+    dna = []
+    for i in range(this):
+        dna_pairs = random_list_choice()
+        x = ''
+        for i in dna_pairs:
+            x = str(x + i)
+        dna.append(x)
+    return dna
 
 
-print(dna)
-# print(f'This DNA Strand has {how_many_pairs} pairs: {x}')
+j = cycle_them(2)
+print(j)
+
+for i in j:
+    file = open('dna.txt', 'a')
+    file.write(i)
+    file.write('\n')
+    file.close()
